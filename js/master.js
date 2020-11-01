@@ -16,8 +16,11 @@ while (i < 7) {
 
   if (dinero < icprice[i]){
     if (dinero >= icprice[i-1]) {
-      var op = i-1;
+      op = i-1;
     }
+  }
+  else if (dinero >= 2.9) {
+    op = 6;    
   }
 
   i++;
