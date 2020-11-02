@@ -10,6 +10,7 @@ var dinero = parseInt(prompt("Cuanto dinero tienes?"));
 while (dinero + "" === "NaN") {
   var dinero = parseInt(prompt("Cuanto dinero tienes? Debes escribir un numero"));
 }
+//Forma opcional sin cambiar mensaje
 //do{
 //  var dinero = parseInt(prompt("Cuanto dinero tienes?"));
 //}while(dinero +"" === "NaN")
