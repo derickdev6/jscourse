@@ -6,6 +6,7 @@ for (var i = 0; i < mypc.length; i++) {
   console.log(mypc[i]);
   document.write(mypc[i] + "<br>");
 }
+mypc.myfunction = "dosomething"
 
 //Array asociativo
 let mypc2 = {
@@ -30,3 +31,19 @@ document.write(mypc2.os + "<br>");
 document.write(mypc2.procesor + "<br>");
 document.write(mypc2.ram + "<br>");
 document.write(mypc2.mobo + "<br>");
+
+//ahora trabajare con for in y for of viendo la diferencia
+document.write("<br><br>For in<br>Con este puedo mostrar los indexes y nombres de funciones<br>")
+for (item in mypc){
+  document.write(item + "<br>")
+}
+document.write("<br>Y puedo mostrar los contenidos si hago array[item]<br>")
+for (item in mypc){
+  document.write(mypc[item] + "<br>")
+}
+
+
+document.write("<br><br>For of<br>")
+for (item of mypc){
+  document.write(item + "<br>")
+}
